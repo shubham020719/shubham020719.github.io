@@ -4,13 +4,19 @@
     font-family: 'poppins', sans-serif;
     box-sizing: border-box;
 }
+body{
+    position: relative;
+}
 #main {
-    background-color: black;
+    background-color: white;
 }
+
 #header {
-    background-color: black;
+    background-color: rgb(10, 10, 10);
     padding-bottom: 100px;
+    
 }
+
 #logo {
     font-size: 45px;
     font-family: Segoe Print;
@@ -19,27 +25,30 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
 #container {
     padding: 10px 60px;
 }
+
 nav {
-    align-items: center;
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    /* margin-left: 50px;
-    margin-right: 50px; */
 }
+
 nav ul li {
     display: inline-block;
     list-style: none;
     margin: 10px 20px;
 }
+
 nav ul li a {
-    color: #fff;
+    color: rgb(252, 249, 249);
     text-decoration: none;
     font-size: 18px;
     position: relative;
 }
+
 nav ul li a::after {
     content: '';
     width: 0%;
@@ -50,41 +59,51 @@ nav ul li a::after {
     bottom: -6px;
     transition: 0.5s;
 }
+
 nav ul li a:hover::after {
     width: 100%;
     background-color: #003fde;
 }
+
 nav img {
     width: 250px;
 }
+
 #headerRow {
     width: 100%;
     display: flex;
     justify-content: space-around;
 }
+
 .header-text {
     margin-top: 10%;
     font-size: 30px;
-    color: #fff;
+    color: rgb(253, 251, 251);
 }
+
 .header-text h1 {
     font-size: 60px;
     margin-top: 20px;
 }
+
 .header-text h1 span {
     color: #ff004f;
 }
+
 .header-text p span {
     color: #ff004f;
 }
+
 #headerImage {
     width: 30%;
 
 }
+
 #headerImage img {
     width: 100%;
     margin-top: 20%;
 }
+
 .wrap {
     background-image: linear-gradient(-225deg,
             #ee900c 0%,
@@ -103,73 +122,97 @@ nav img {
     display: inline-block;
     font-weight: bold;
 }
+
 @keyframes textclip {
     to {
         background-position: 100% center;
     }
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
 #about {
     width: 85%;
     margin: auto;
     display: flex;
     justify-content: space-around;
-    border-radius: 10px;
+    border-radius: 50px;
     padding: 20px;
     align-items: center;
-    margin-top: 40px;
-    background-color: rgb(192, 81, 177);
-    color: white;
+    margin-top: 20px;
+    background-color: rgba(128, 128, 128, 0.5);
+    color: black;
 }
+
 .Aboutpic {
     width: 30%;
 }
+
 .Aboutpic img {
     width: 100%;
     border-radius: 50%;
     /* margin-top: 20%; */
 }
+
 .title {
     width: 50%;
 }
+
 .title h1 {
     font-size: 30px;
     font-family: sans-serif;
-    /* text-decoration: underline; */
+    text-decoration: underline;
 }
+
 .title p {
-    font-size: 18px;
+    font-size: 21px;
     line-height: 25px;
-    font-weight:lighter;
+    font-weight: lighter;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+
 #resumeBtn {
-    padding: 10px 15px;
+    padding: 5px 7px;
     background-color: #ff004f;
     color: #fff;
-    border-radius: 10px;
     margin-top: 10px;
+    border-radius: 5px;
     font-size: 17px;
-    border:0px;
+    border: 0px;
     font-style: italic;
 }
+
 #resumeBtn:hover {
-    background-color: #6c51d081;
+    /* background-color: #6c51d081; */
+    border-radius: 10px;
 }
+
 #skildiv {
     text-align: center;
-    color: #fff;
     margin: auto;
     width: 85%;
+
     padding: 20px;
     border-radius: 10px;
 }
+
+.skils_border {
+    height: 530px;
+    border: 2px solid;
+    border-radius: 15px;
+    padding: 10px;
+}
+
 #skill {
     display: grid;
     grid-template-columns: repeat(4, 15%);
-    gap: 10px;   
+    gap: 10px;
     margin: auto;
     justify-content: space-around;
 }
+
 #skill2 {
     display: grid;
     grid-template-columns: repeat(4, 15%);
@@ -177,15 +220,128 @@ nav img {
     margin: auto;
     justify-content: space-around;
 }
+
 #skill img {
     padding: 10px;
     width: 100%;
     height: 150px;
     background-color: white;
 }
+
+#skill img:hover {
+    background-color: rgb(236, 226, 226);
+}
+
+#skill2 img:hover {
+    background-color: rgb(236, 226, 226);
+}
+
 #skill2 img {
     padding: 10px;
     width: 100%;
     height: 150px;
     background-color: white;
+}
+
+#projectDiv {
+    width: 85%;
+    margin: auto;
+    text-align: center;
+}
+
+.Each_skill_div {
+    text-align: center;
+    background-color: rgba(128, 128, 128, 0.366);
+    padding: 10px;
+    border-radius: 20px;
+}
+.Each_skill_div h3{
+    margin-top: 10px;
+    text-decoration: underline;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.h1Heading {
+    background-color: rgba(128, 128, 128, 0.366);
+    width: 35%;
+    margin: auto;
+    margin-bottom: 20px;
+    padding: 7px;
+    text-transform: uppercase;
+    border-radius: 20px;
+}
+
+.projects {
+    display: flex;
+    width: 100%;
+    height: 400px;
+    margin: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    /* height: 500px */
+}
+
+.projectImg {
+    width: 55%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.projectImg img {
+    width: 98%;
+    height: 400px;
+    border: 2px solid;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+#spclimg {
+    height: 300px
+}
+
+.projectTextDiv {
+    padding: 35px;
+    text-align: left;
+    margin: auto;
+    font-size: 17px;
+    width: 45%;
+    font-family: 'poppins', sans-serif;
+}
+
+.techspan {
+    margin-top: 20px;
+}
+
+.techspan span {
+    font-weight: lighter;
+}
+
+.projectbtn {
+    margin-right: 10px;
+    padding: 7px 10px;
+    margin-top: 10px;
+    background-color: white;
+    border: 1px solid rebeccapurple;
+}
+
+.projectbtn a {
+    color: rgb(27, 122, 107);
+}
+
+.projectbtn a:hover {
+    color: white;
+}
+
+.projectbtn:hover {
+    color: white;
+    background-color: #914d80;
+    transition: 1s;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+hr {
+    border: 2px solid #ff004f;
+    background-color: #ff004f;
 }
